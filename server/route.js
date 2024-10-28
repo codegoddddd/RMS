@@ -11,6 +11,13 @@ const { loginUser } = require('./controllerlogin');
 
 const route = express.Router()
 
+// Middleware to handle CORS preflight requests for specific routes
+route.options('/register', (req, res) => {
+  res.header("Access-Control-Allow-Origin", "https://rms-t48e.vercel.app");
+  res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+  res.sendStatus(204); // No Content
+});
+
 
 // Routes for 2nd Year 1st Semester
 route.post('/secondyear1',studentcontroller1.adduser)
