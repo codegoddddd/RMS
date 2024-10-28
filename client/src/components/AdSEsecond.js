@@ -7,7 +7,7 @@ function AdSEsecond() {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-    axios.get("http://localhost:8000/abc/secondyear2marks")
+    axios.get("https://rms-inky.vercel.app/abc/secondyear2marks")
         .then((res) => {
         console.log(res);
         console.log(res.data);
@@ -19,7 +19,7 @@ function AdSEsecond() {
     }, []);
 
     function handledelete(ROLL){
-    axios.delete(`http://localhost:8000/abc/deletestudentSE2/${ROLL}`)
+    axios.delete(`https://rms-inky.vercel.app/abc/deletestudentSE2/${ROLL}`)
     .then(res => {
         console.log(res.data);
     })
