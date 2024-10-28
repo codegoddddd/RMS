@@ -1,0 +1,14 @@
+[
+  { "id": 1, 
+  "name": "John Doe", "FDS": 25,"CG":56,"DELD":78,"DM":90,"OOP":76 },
+  { "id": 2, 
+  "name": "Jane Smith", "FDS": 45,"CG":58,"DELD":48,"DM":60,"OOP":45},
+  { "id": 3, 
+  "name": "Bob Johnson", "FDS": 95,"CG":56,"DELD":28,"DM":90,"OOP":96 },
+  { "id": 4, 
+  "name": "Bob MITCHELL", "FDS": 68,"CG":90,"DELD":68,"DM":87,"OOP":70 },
+  { "id": 5, 
+  "name": "Ion Johnson", "FDS": 25,"CG":56,"DELD":78,"DM":90,"OOP":76 },
+  { "id": 6, 
+  "name": "Morgan Stephen", "FDS": 34,"CG":87,"DELD":61,"DM":69,"OOP":34 }
+]
