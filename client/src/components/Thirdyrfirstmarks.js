@@ -7,7 +7,7 @@
 //   const [toppers, setToppers] = useState([]);
 
 //   useEffect(() => {
-//     axios.get("http://localhost:8000/abc/thirdyearfirstmarks")
+//     axios.get("https://rms-inky.vercel.app/abc/thirdyearfirstmarks")
 //       .then((res) => {
 //         console.log(res);
 //         console.log(res.data);
@@ -108,7 +108,7 @@ function Thirdyrfirstmarks() {
   const chartRef = useRef(null);
 
   useEffect(() => {
-    axios.get("http://localhost:8000/abc/thirdyearfirstmarks")
+    axios.get("https://rms-inky.vercel.app/abc/thirdyearfirstmarks")
       .then((res) => {
         console.log(res);
         console.log(res.data);
