@@ -6,7 +6,7 @@ function AdTEfirst() {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-    axios.get("http://localhost:8000/abc/thirdyearfirstmarks")
+    axios.get("https://rms-inky.vercel.app/abc/thirdyearfirstmarks")
         .then((res) => {
         console.log(res);
         console.log(res.data);
@@ -18,7 +18,7 @@ function AdTEfirst() {
     }, []);
 
     function handledelete(ROLL){
-    axios.delete(`http://localhost:8000/abc/deletestudentTE1/${ROLL}`)
+    axios.delete(`https://rms-inky.vercel.app/abc/deletestudentTE1/${ROLL}`)
     .then(res => {
         console.log(res.data);
 
