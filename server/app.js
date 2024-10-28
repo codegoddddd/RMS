@@ -29,6 +29,9 @@ app.get("/", (req, res) => {
   res.send("Running at Port 8000");
 });
 
+// Handle preflight requests
+app.options('*', cors()); // Enable pre-flight requests for all routes
+
 const PORT = process.env.PORT || 8000; // Use environment port or default to 8000
 app.listen(PORT, () => console.log(`Running at port ${PORT}`));
 
