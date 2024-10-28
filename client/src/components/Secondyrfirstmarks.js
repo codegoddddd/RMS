@@ -7,7 +7,7 @@
 //   const [toppers, setToppers] = useState([]);
 
 //   useEffect(() => {
-//     axios.get("http://localhost:8000/abc/secondyear1marks")
+//     axios.get("https://rms-inky.vercel.app/abc/secondyear1marks")
 //       .then((res) => {
 //         console.log(res);
 //         console.log(res.data);
@@ -39,7 +39,7 @@ function Secondyrfirstmarks() {
   const chartRef = useRef(null);
 
   useEffect(() => {
-    axios.get("http://localhost:8000/abc/secondyear1marks")
+    axios.get("https://rms-inky.vercel.app/abc/secondyear1marks")
       .then((res) => {
         console.log(res);
         console.log(res.data);
