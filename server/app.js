@@ -4,6 +4,7 @@ const cors = require("cors");
 const app = express();
 const mongoose = require("mongoose");
 const mongoURI = process.env.MONGODB_URI;
+require('dotenv').config(); // Load environment variables
 
 mongoose
   .connect(mongoURI || "mongodb+srv://admin:pass@123@cluster0.vil7r7h.mongodb.net/")
@@ -24,7 +25,8 @@ app.get("/", (req, res) => {
   res.send("Running at Port 8000");
 });
 
-app.listen(8000, () => console.log("Running at LocalHost 8000"));
+const PORT = process.env.PORT || 8000; // Use environment port or default to 8000
+app.listen(PORT, () => console.log(`Running at port ${PORT}`));
 
 // const express = require('express')
 // const app = express()
