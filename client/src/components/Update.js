@@ -20,7 +20,7 @@ function Update() {
     const fetchData = async () => {
       try {
         if (userEmail) {
-          const response = await axios.get(`http://localhost:8000/abc/findone/${userEmail}`);
+          const response = await axios.get(`https://rms-inky.vercel.app/abc/findone/${userEmail}`);
           const user = response.data.data;
           setUserData(user);
         }
@@ -42,7 +42,7 @@ function Update() {
         password: password,
       };
 
-      const response = await axios.put(`http://localhost:8000/abc/update/${userEmail}`, updatedData);
+      const response = await axios.put(`https://rms-inky.vercel.app/abc/update/${userEmail}`, updatedData);
 
       console.log(response.data);
 
@@ -171,7 +171,7 @@ export default Update;
 //       try {
 //         if (userEmail) {
 //           console.log('Request received with email:', userEmail);
-//           const response = await axios.get(`http://localhost:8000/abc/findone/${userEmail}`);
+//           const response = await axios.get(`https://rms-inky.vercel.app/abc/findone/${userEmail}`);
 //           console.log('Data fetched successfully');
 //           const user = response.data;
 //           console.log(user); // Check the console for user data
@@ -193,7 +193,7 @@ export default Update;
 //         ...userData,
 //       };
 
-//       const response = await axios.put(`http://localhost:8000/abc/update/${userEmail}`, updatedData);
+//       const response = await axios.put(`https://rms-inky.vercel.app/abc/update/${userEmail}`, updatedData);
 
 //       console.log(response.data);
 
