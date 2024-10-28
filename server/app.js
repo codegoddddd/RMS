@@ -6,12 +6,14 @@ const mongoose = require("mongoose");
 const mongoURI = process.env.MONGODB_URI;
 require('dotenv').config(); // Load environment variables
 
+// Connect to MongoDB
 mongoose
   .connect(mongoURI || "mongodb+srv://admin:pass@123@cluster0.vil7r7h.mongodb.net/")
-  .then(console.log("MongoDB Connected"))
+  .then(() => console.log("MongoDB Connected"))
   .catch((err) => {
     console.log(err);
   });
+
 app.use(cors({
   origin: 'https://rms-t48e.vercel.app', // Allow requests from your frontend domain
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify allowed methods
