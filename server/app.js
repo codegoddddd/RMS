@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 const mongoURI = process.env.MONGODB_URI;
 
 mongoose
-  .connect(mongoURI)
+  .connect(mongoURI || "mongodb+srv://admin:pass@123@cluster0.vil7r7h.mongodb.net/")
   .then(console.log("MongoDB Connected"))
   .catch((err) => {
     console.log(err);
