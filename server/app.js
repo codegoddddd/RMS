@@ -12,7 +12,11 @@ mongoose
   .catch((err) => {
     console.log(err);
   });
-app.use(cors());
+app.use(cors({
+  origin: 'https://rms-t48e.vercel.app', // Allow requests from your frontend domain
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify allowed methods
+  credentials: true // If you need to allow cookies or authorization headers
+}));  // added so server can get requests from client
 app.use(express.json());
 
 const route = require("./route");
