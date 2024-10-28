@@ -1,4 +1,10 @@
 {
+  "name": "server",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node app.js" // Your server start command
+    // No build script is necessary here for a Node.js backend
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2",
