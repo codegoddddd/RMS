@@ -45,7 +45,7 @@ console.log('***********************************************',percent);
     };
     
 
-    axios.post("http://localhost:8000/abc/secondyear1", setData)
+    axios.post("https://rms-inky.vercel.app/abc/secondyear1", setData)
       .then((res) => {
         console.log(res.data);
       })
