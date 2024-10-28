@@ -30,7 +30,7 @@ function UpdateSE1() {
     const fetchData = async () => {
       try {
         if (studRoll) {
-          const response = await axios.get(`http://localhost:8000/abc/findstudentSE1/${studRoll}`);
+          const response = await axios.get(`https://rms-inky.vercel.app/abc/findstudentSE1/${studRoll}`);
           const student = response.data.data;
           setStudentData(student);
 
@@ -92,7 +92,7 @@ function UpdateSE1() {
       };
   
       // Make the PUT request
-      const response = await axios.put(`http://localhost:8000/abc/updatestudentSE1/${studRoll}`, updatedDataWithRoll);
+      const response = await axios.put(`https://rms-inky.vercel.app/abc/updatestudentSE1/${studRoll}`, updatedDataWithRoll);
   
       console.log(response.data);
 
