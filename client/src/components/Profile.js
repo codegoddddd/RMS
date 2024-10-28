@@ -14,7 +14,7 @@ function Profile() {
 
     // Ensure that userEmail is not null or undefined before attempting to fetch data
     if (userEmail) {
-      const apiUrl = `http://localhost:8000/abc/findone/${userEmail}`;
+      const apiUrl = `https://rms-inky.vercel.app/abc/findone/${userEmail}`;
 
       // Fetch user data from the server
       fetch(apiUrl)
