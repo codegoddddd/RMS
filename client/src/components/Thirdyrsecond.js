@@ -51,7 +51,7 @@ function Thirdyrsecond() {
   
       
       
-      axios.post("http://localhost:8000/abc/thirdYear2", setData)
+      axios.post("https://rms-inky.vercel.app/abc/thirdYear2", setData)
         .then((res) => {
           console.log(res.data);
         })
