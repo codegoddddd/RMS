@@ -55,7 +55,7 @@ console.log('***********************************************',DSA);
 
     
     
-    axios.post("http://localhost:8000/abc/secondYear2", setData)
+    axios.post("https://rms-inky.vercel.app/abc/secondYear2", setData)
       .then((res) => {
         console.log(res.data);
       })
