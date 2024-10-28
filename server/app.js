@@ -3,9 +3,10 @@ const { json } = require("body-parser");
 const cors = require("cors");
 const app = express();
 const mongoose = require("mongoose");
+const mongoURI = process.env.MONGODB_URI;
 
 mongoose
-  .connect("mongodb://localhost:27017/finaltestdb")
+  .connect(mongoURI)
   .then(console.log("MongoDB Connected"))
   .catch((err) => {
     console.log(err);
