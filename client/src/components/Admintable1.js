@@ -10,7 +10,7 @@ function Admintable1() {
     // const navigate=useNavigate()
 
     useEffect(() => {
-      axios.get("http://localhost:8000/abc/findall")
+      axios.get("https://rms-inky.vercel.app/abc/findall")
         .then(res => {
           console.log(res.data);
           setData(res.data);
@@ -21,7 +21,7 @@ function Admintable1() {
     }, []);
 
     function handledelete(email){
-      axios.delete(`http://localhost:8000/abc/delete/${email}`)
+      axios.delete(`https://rms-inky.vercel.app/abc/delete/${email}`)
       .then(res => {
         console.log(res.data);
       })
