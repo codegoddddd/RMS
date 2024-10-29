@@ -24,13 +24,14 @@ const loginUser = async (req, res) => {
   console.log('Login attempt for email:', email);
 
   try {
+    // Find the user by email
     const user = await studentmodalfourth.findOne({ email });
     console.log('User found:', user);
 
     if (user) {
-      const isMatch = await bcrypt.compare(password, user.password);
-      console.log('Password match:', isMatch);
-      if (isMatch) {
+      // Check if the password matches (simple comparison for now)
+      if (user.password === password) {
+        // Respond with success and include the user's email
         res.status(200).send({ msg: 'Login successful', email: user.email });
       } else {
         res.status(401).send({ msg: 'Invalid email or password' });
@@ -43,6 +44,5 @@ const loginUser = async (req, res) => {
     res.status(500).send({ msg: 'Internal Server Error' });
   }
 };
-
 
 module.exports = { loginUser };
