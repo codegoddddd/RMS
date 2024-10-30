@@ -70,7 +70,7 @@ function Navbar() {
               </Link>
             ) : (
               <a href="/Login" className="nav-link" onClick={handleLoginClick}>
-                <button type="button" className="btn btn-primary mx-2">
+                <button type="button" className="btn btn-primary mx-2 my-2">
                   Login/Register
                 </button>
               </a>
