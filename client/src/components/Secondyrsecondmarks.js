@@ -266,7 +266,7 @@ function Secondyrsecondmarks() {
         </tbody>
       </table>
       <center>
-        <Link className="btn btn-success" to="/Recom">Let's Improve</Link>
+        <Link className="btn btn-success my-2" to="/Recom">Let's Improve</Link>
       </center>
     </div>
   );
