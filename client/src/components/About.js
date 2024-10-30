@@ -16,7 +16,7 @@ function About() {
                         <h3 className="display-5">About Us</h3>
                         <h2 className='display-6'>Empowers students and teachers with real-time access to academic performance</h2>
                         <p className="display-6">The all-in-one platform to add, update, and analyze student results</p>
-                        <Link to="/Login" className="btn btn-success">Get Started</Link>
+                        <Link to="/Login" className="btn btn-success my-2">Get Started</Link>
                     </div>
                 </div>
                 <div className="col-md-6" >
