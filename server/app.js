@@ -8,7 +8,7 @@ require('dotenv').config(); // Load environment variables
 
 // Connect to MongoDB
 mongoose
-  .connect(mongoURI || "mongodb+srv://admin:pass@123@cluster0.vil7r7h.mongodb.net/")
+  .connect(mongoURI) // || "mongodb+srv://admin:pass@123@cluster0.vil7r7h.mongodb.net/"
   .then(() => console.log("MongoDB Connected"))
   .catch((err) => {
     console.log(err);
