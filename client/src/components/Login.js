@@ -40,7 +40,7 @@ function Login() {
       password: password,
     };
 
-    const apiUrl = isRegisterMode ? 'http://localhost:8000/abc/register' : 'http://localhost:8000/abc/login';
+    const apiUrl = isRegisterMode ? 'https://rms-inky.vercel.app/abc/register' : 'https://rms-inky.vercel.app/abc/login';
 
     axios.post(apiUrl, userData)
       .then((res) => {
