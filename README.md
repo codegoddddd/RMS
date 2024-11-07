@@ -1,4 +1,4 @@
-# Result Management System
+# SCORECRAFTERS - Result Management System
 ## https://rms-t48e.vercel.app/
 
 ## Introduction 
