@@ -25,7 +25,7 @@ function Home() {
        <div className="row no-gutters">
           <h3 className="text-center">How It Works:</h3>
           <br /><br />
-          <div className="col-md-4">
+          <div className="col-md-4 my-2">
             <div className="card text-center bg-dark text-light my-1" style={{height:"100%"}}>
               <img src={step1} className="card-img-top" alt="..."/>
               {/* <i className="bi bi-file-earmark-arrow-up-fill"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-file-earmark-arrow-up-fill" viewBox="0 0 16 16">
@@ -37,7 +37,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 my-2">
             <div className="card text-center bg-dark text-light my-1" style={{height:"100%"}}>
               <img src={step2} className="card-img-top" alt="..."/>
               {/* <i className="bi bi-clipboard-data"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-clipboard-data" viewBox="0 0 16 16">
@@ -52,7 +52,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 my-2">
             <div className="card text-center bg-dark text-light my-1" style={{height:"100%"}}>
               <img src={step3} className="card-img-top" alt="..."/>
               {/* <i className="bi bi-brightness-alt-high-fill"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-brightness-alt-high-fill" viewBox="0 0 16 16">
